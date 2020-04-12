@@ -1,0 +1,91 @@
+body {
+  background-color: $color-base;
+}
+
+.sky {
+  display: box;
+  margin-top: 0;
+}
+
+.home {
+  color: $color-dark-green;
+
+  &--title {
+    font-size: $title;
+    color: $color-dark-green;
+    font-weight: 100;
+    display: block;
+    text-transform: UPPERCASE;
+    text-align: center;
+    position: relative;
+    padding: -10rem;
+  }
+  &--subtitle {
+    font-size: $substitle;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+
+    padding-top: 3rem;
+  }
+
+  &--container {
+    justify-content: center;
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+      color: $color-dark-green;
+    }
+    &__item {
+      padding: 9rem;
+      margin-top: 1rem;
+      font-size: $catergories;
+      font-weight: 500 !important;
+      color: $color-dark-green;
+      text-decoration: none;
+      align-self: start;
+
+      &:hover {
+        color: $color-dark-green;
+      }
+      &:active {
+        color: $color-dark-green;
+      }
+    }
+  }
+}
+
+#star {
+  animation: shinning 3s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#star1 {
+  animation: shinning 2s 1s infinite;
+  transform-origin: center;
+}
+
+#star2 {
+  animation: shinning 1s 3s infinite;
+  transform-origin: center;
+}
+
+#star3 {
+  animation: shinning 3s 2s infinite;
+  transform-origin: center;
+}
+@keyframes shinning {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
