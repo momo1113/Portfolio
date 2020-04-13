@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: right;
+  float: right;
+  margin-top: 4rem;
+  color: $color-dark-green;
+  text-decoration: none;
+  &--item {
+    font-size: 3rem;
+    padding: 5rem;
+
+    &__text {
+      color: $color-dark-green;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-dark-green;
+      }
+      &:active {
+        color: $color-dark-green;
+      }
+    }
+  }
+}

@@ -19,7 +19,7 @@ const HomePage = () => (
 
     {/*  home container */}
     <div className="home--container">
-      <Link to="/education" className="home--container__item ">
+      <Link to="/academy" className="home--container__item ">
         Education
       </Link>
 
