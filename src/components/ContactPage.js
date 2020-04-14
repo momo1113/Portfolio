@@ -16,7 +16,7 @@ const ContactPage = () => (
       </div>
 
       <div className="header--item">
-        <Link to="/academy" className="header--item__text">
+        <Link to="/education" className="header--item__text">
           Education
         </Link>
       </div>

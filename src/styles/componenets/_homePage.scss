@@ -47,15 +47,18 @@ body {
       margin-top: 1rem;
       font-size: $catergories;
       font-weight: 500 !important;
-      color: $color-dark-green;
+      color: $color-darker-purple;
       text-decoration: none;
       align-self: start;
+      transition: all 0;
 
       &:hover {
-        color: $color-dark-green;
+        font-weight: 800;
+        transform: scale(1.2) translateY(-0.3rem);
       }
       &:active {
-        color: $color-dark-green;
+        color: $color-light-purple;
+        transform: translateY(0.3rem);
       }
     }
   }

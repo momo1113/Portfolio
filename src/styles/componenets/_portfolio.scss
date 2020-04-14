@@ -1,0 +1,48 @@
+.portfolio--container {
+  @include header-container;
+
+  &__item {
+    @include left--line--item;
+  }
+
+  &__text {
+    @include text;
+  }
+}
+
+.col-1-of-3 {
+  width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
+  &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--item {
+      font-size: 3rem;
+      padding: 6rem;
+      color: $color-dark-green;
+      transition: all 0;
+
+      &:hover {
+        transform: scale(1.5) translateY(-0.3rem);
+        font-weight: bold;
+      }
+      &:active {
+        color: $color-dark-green;
+        transform: scale(1.5) translateY(0.3rem);
+        font-weight: bold;
+      }
+      &__text {
+        text-decoration: none;
+        color: $color-dark-green;
+      }
+    }
+  }
+}
+
+.col-2-of-3 {
+  width: calc(
+    2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+  );
+}

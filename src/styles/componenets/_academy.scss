@@ -1,0 +1,11 @@
+.education--container {
+  @include header-container;
+
+  &__item {
+    @include left--line--item;
+  }
+
+  &__text {
+    @include text;
+  }
+}

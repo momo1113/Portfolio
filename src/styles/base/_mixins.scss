@@ -1,0 +1,18 @@
+@mixin header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  align-items: center;
+}
+
+@mixin left--line--item {
+  margin: 6rem;
+  width: 40rem;
+  height: 3px;
+  background-color: $color-dark-green;
+}
+
+@mixin text {
+  font-size: 5rem;
+  color: $color-dark-green;
+}
