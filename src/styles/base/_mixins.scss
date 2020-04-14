@@ -16,3 +16,16 @@
   font-size: 5rem;
   color: $color-dark-green;
 }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin image_size {
+  width: 200px;
+  height: 200px;
+}
