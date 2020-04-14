@@ -1,13 +1,17 @@
+.contact {
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   justify-content: right;
   float: right;
-  margin-top: 4rem;
+  margin-top: 1rem;
   color: $color-dark-green;
   text-decoration: none;
   &--item {
-    font-size: 3rem;
-    padding: 5rem;
+    font-size: 2rem;
+    padding: 4rem;
 
     &__text {
       color: $color-dark-green;
@@ -19,6 +23,37 @@
       &:active {
         color: $color-dark-green;
       }
+    }
+  }
+}
+
+.info--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 14rem;
+  opacity: 0.8;
+  backface-visibility: hidden;
+
+  margin-bottom: 1rem;
+
+  &:hover {
+    filter: blur(3px) brightness(80%);
+  }
+}
+
+.social--container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+
+  &__item {
+    padding: 4rem;
+    transform: scale(0.6);
+    &:hover {
+      transform: translateY(0.1rem);
+    }
+    &:active {
+      transform: translateY(-0.1rem);
     }
   }
 }
