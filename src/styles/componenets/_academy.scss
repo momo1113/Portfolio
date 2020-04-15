@@ -44,6 +44,11 @@
         font-size: $catergories;
         font-weight: bold;
         color: $color-light-purple;
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 1px 1px 1px rgba(black, 0.1);
+        }
       }
 
       &__degree {
@@ -80,5 +85,5 @@
 
 span {
   font-size: $small;
-  padding-left: 20rem;
+  padding-left: 25rem;
 }
