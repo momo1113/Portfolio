@@ -29,3 +29,50 @@
   width: 200px;
   height: 200px;
 }
+
+@mixin row {
+  max-width: $grid-width;
+  margin: 0 auto;
+}
+
+@mixin col-1-of-3 {
+  width: calc((100% - 2 *#{$gutter-horizontal}) / 3);
+}
+
+@mixin column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin column-container-item {
+  font-size: 3rem;
+  padding: 6rem;
+  color: $color-dark-green;
+  transition: all 0;
+
+  &:hover {
+    transform: scale(1.5) translateY(-0.3rem);
+    font-weight: bold;
+  }
+  &:active {
+    color: $color-dark-green;
+    transform: scale(1.5) translateY(0.3rem);
+    font-weight: bold;
+  }
+  &__text {
+    text-decoration: none;
+    color: $color-dark-green;
+  }
+}
+
+@mixin col-2-of-3 {
+  width: calc(
+    2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+  );
+}
+
+@mixin col-2-of-3-container {
+  margin-top: 4.5rem;
+}

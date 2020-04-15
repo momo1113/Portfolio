@@ -1,5 +1,5 @@
 .education--container {
-  @include header-container;
+  @include column-container;
 
   &__item {
     @include left--line--item;
@@ -8,4 +8,77 @@
   &__text {
     @include text;
   }
+}
+
+.row {
+  @include row;
+  @include clearfix;
+
+  [class^="col-"] {
+    float: left;
+  }
+  .col-1-of-3 {
+    @include col-1-of-3;
+    &--container {
+      @include column-container;
+
+      &--item {
+        @include column-container-item;
+      }
+    }
+  }
+
+  .col-2-of-3 {
+    @include col-2-of-3;
+    overflow: hidden;
+
+    &--container {
+      @include col-2-of-3-container;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &__school {
+        margin: 0;
+        padding: 1rem;
+        font-size: $catergories;
+        font-weight: bold;
+        color: $color-light-purple;
+      }
+
+      &__degree {
+        margin: 0;
+        padding: 1rem;
+        font-size: $small;
+        color: $color-light-purple;
+      }
+    }
+
+    &--courses {
+      display: flex;
+      flex-direction: column;
+      opacity: 0.8;
+
+      &__text {
+        margin-top: $catergories;
+        font-size: $catergories;
+        color: $color-darker-purple;
+        padding: 1rem;
+      }
+
+      &__list {
+        padding-left: 15rem;
+        text-align: left;
+
+        li {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+span {
+  font-size: $small;
+  padding-left: 20rem;
 }

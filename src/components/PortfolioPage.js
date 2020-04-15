@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import weather from "../img/weather.png";
+import gatorTrader from "../img/gatorTrader.png";
 
 const PortfolioPage = () => (
   <div>
@@ -58,27 +59,27 @@ const PortfolioPage = () => (
             </a>
           </div>
           <div className="col-1-of-3 project--container--item">
-            <img src={weather} alt="project" className="img__2" />
+            <img src={gatorTrader} alt="project" className="img__2" />
           </div>
           <div className="col-1-of-3 project--container--item">
-            <img src={weather} alt="project" />
+            <img src={weather} alt="project" className="img__3" />
           </div>
 
           {/**  projects */}
           <div className="row">
             <div className="col-1-of-3 project--container--item1">
-              <img src={weather} alt="project" />
+              <img src={weather} alt="project" className="img__4" />
             </div>
             <div className="col-1-of-3 project--container--item1">
-              <img src={weather} alt="project" />
+              <img src={weather} alt="project" className="img__5" />
             </div>
             <div className="col-1-of-3 project--container--item1">
-              <img src={weather} alt="project" />
+              <img src={weather} alt="project" className="img__6" />
             </div>
           </div>
 
           <div className="row">
-            <p>More to come...</p>
+            <p className="caption">More to come ...</p>
           </div>
         </div>
       </div>
