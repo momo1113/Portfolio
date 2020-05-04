@@ -84,7 +84,7 @@ const PortfolioPage = () => (
               </div>
             </a>
             <div className="col-1-of-3 project--container--item1">
-              <img src={weather} alt="project" className="img__6" />
+              {/** new projects */}
             </div>
           </div>
 
