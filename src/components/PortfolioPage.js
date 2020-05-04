@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import weather from "../img/weather.png";
 import gatorTrader from "../img/gatorTrader.png";
+import portfolio from "../img/portfolio.png";
+import bookReview from "../img/book_review.png";
+import sailGoldenGate from "../img/sailGoldenGate.png";
 
 const PortfolioPage = () => (
   <div>
@@ -61,18 +64,25 @@ const PortfolioPage = () => (
           <div className="col-1-of-3 project--container--item">
             <img src={gatorTrader} alt="project" className="img__2" />
           </div>
-          <div className="col-1-of-3 project--container--item">
-            <img src={weather} alt="project" className="img__3" />
-          </div>
+          <a href="https://github.com/momo1113/Portfolio">
+            <div className="col-1-of-3 project--container--item">
+              <img src={portfolio} alt="project" className="img__3" />
+            </div>
+          </a>
 
           {/**  projects */}
           <div className="row">
-            <div className="col-1-of-3 project--container--item1">
-              <img src={weather} alt="project" className="img__4" />
-            </div>
-            <div className="col-1-of-3 project--container--item1">
-              <img src={weather} alt="project" className="img__5" />
-            </div>
+            <a href="https://github.com/momo1113/book-review">
+              <div className="col-1-of-3 project--container--item1">
+                <img src={bookReview} alt="project" className="img__4" />
+              </div>
+            </a>
+
+            <a href="https://github.com/momo1113/sailGoldenGate">
+              <div className="col-1-of-3 project--container--item1">
+                <img src={sailGoldenGate} alt="project" className="img__5" />
+              </div>
+            </a>
             <div className="col-1-of-3 project--container--item1">
               <img src={weather} alt="project" className="img__6" />
             </div>
