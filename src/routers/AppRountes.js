@@ -1,3 +1,4 @@
+import ReactGA from "react-ga";
 import React from "react";
 import HomePage from "../components/HomePage";
 import Academy from "../components/Academy";
@@ -21,5 +22,10 @@ const AppRoutes = () => (
     </Switch>
   </BrowserRouter>
 );
+
+function initializeReactGA() {
+  ReactGA.initialize("UA-123791717-1");
+  ReactGA.pageview("/homepage");
+}
 
 export default AppRoutes;
